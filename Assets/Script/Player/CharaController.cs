@@ -15,6 +15,8 @@ public class CharaController : CharaBehavior
     void Update()
     {
         Move();
+        CheckGround();
+        Action();
     }
 
     public void Action()

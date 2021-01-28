@@ -29,12 +29,13 @@ public class CharaBehavior : MonoBehaviour
 
     public void Move()
     {
-        rb.velocity = direction;
+        rb.velocity = direction * speed;
         ChangeFlip();
     }
 
     public void Jump()
     {
+        rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
     }
 
