@@ -1,0 +1,334 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7059652787528974241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7059652787528974245}
+  - component: {fileID: 7595583283060605468}
+  - component: {fileID: 5058161449474547030}
+  - component: {fileID: 5958740494214816576}
+  - component: {fileID: 9134551001082559871}
+  m_Layer: 0
+  m_Name: AudioController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7059652787528974245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059652787528974241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8519120902725736527}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7595583283060605468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059652787528974241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9e44a8d558234428178c48f9c19ac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5058161449474547030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059652787528974241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f2b7a9fda5ff34da3e2b3a2b004bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmClips:
+  - name: MainMenu
+    localVolume: 0.315
+    clip: {fileID: 8300000, guid: ea23bc9957534eb498b1b65251f051fd, type: 3}
+  - name: terrorcopter
+    localVolume: 0.219
+    clip: {fileID: 8300000, guid: 45236595c3a7b0641874bf76f0c80357, type: 3}
+  - name: helicopter_blades
+    localVolume: 0.136
+    clip: {fileID: 8300000, guid: f89639cc7f7c35f4a961b9a7e10cf860, type: 3}
+  - name: gatekeeper
+    localVolume: 0.219
+    clip: {fileID: 8300000, guid: 41c658e29b9cec24795c97af167eafc8, type: 3}
+  - name: training
+    localVolume: 0.219
+    clip: {fileID: 8300000, guid: 138dcfec884dcc543b270b2336f099e4, type: 3}
+  - name: training_basic
+    localVolume: 0.219
+    clip: {fileID: 8300000, guid: d4cdc7bb2b8e0564699fc9cd05a03358, type: 3}
+  - name: chariot
+    localVolume: 0.219
+    clip: {fileID: 8300000, guid: d9515f5d769bb4b498a117f6a77699e4, type: 3}
+  - name: tidemaster
+    localVolume: 0.219
+    clip: {fileID: 8300000, guid: 53905a97ca884eb47b719db9ec337750, type: 3}
+  - name: bike_engine
+    localVolume: 0.219
+    clip: {fileID: 8300000, guid: 58902568ba054654a9342e0de024f038, type: 3}
+  - name: train_engine
+    localVolume: 0.219
+    clip: {fileID: 8300000, guid: 3869ef60e6fa71f49b41bbefbbca06be, type: 3}
+  - name: chariot_cutscene
+    localVolume: 0.219
+    clip: {fileID: 8300000, guid: 2c4447bd39e27174f99a0ef8c57d4620, type: 3}
+  - name: submarine_engine
+    localVolume: 0.05
+    clip: {fileID: 8300000, guid: d8fdabe28f391104b8bc3e9247dfa06b, type: 3}
+  sfxClips:
+  - name: click
+    localVolume: 0.541
+    clip: {fileID: 8300000, guid: f3c8ce25895e8684fb7d4dc21c35ad48, type: 3}
+  - name: helicopter_blades
+    localVolume: 0.083
+    clip: {fileID: 8300000, guid: f89639cc7f7c35f4a961b9a7e10cf860, type: 3}
+  - name: helicopter_damage
+    localVolume: 0.719
+    clip: {fileID: 8300000, guid: 60cdf0b188c029646b97c9dcb9ce0a02, type: 3}
+  - name: helicopter_destroyed_2
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: c6c61b3ca4741d641955f9d8f4b82980, type: 3}
+  - name: helicopter_destroyed
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 7a36878cc82ac1c47b0a55c1f049358d, type: 3}
+  - name: hover
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 4d74d7d7d4f4f2546951b9187131d451, type: 3}
+  - name: item_selected
+    localVolume: 0.589
+    clip: {fileID: 8300000, guid: 75b7589fa58c38345a2927003048776f, type: 3}
+  - name: item_used
+    localVolume: 0.521
+    clip: {fileID: 8300000, guid: 0cace5ab23aa49d4bb8c829866c54d29, type: 3}
+  - name: machine_gun
+    localVolume: 0.39
+    clip: {fileID: 8300000, guid: 6dfbe41482655314dba7b4ec10d31cc6, type: 3}
+  - name: player_damaged
+    localVolume: 0.521
+    clip: {fileID: 8300000, guid: 737c4cb2e778dad499d12582be5951bf, type: 3}
+  - name: rocket_impact
+    localVolume: 0.178
+    clip: {fileID: 8300000, guid: d88a27069642190488dc67f11559255d, type: 3}
+  - name: rocket_launch
+    localVolume: 0.226
+    clip: {fileID: 8300000, guid: 302af92bc5b67f744aebca9cdec07138, type: 3}
+  - name: transition
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: c0261b3bf803e574c9b813cdc9ca2501, type: 3}
+  - name: laser
+    localVolume: 0.52
+    clip: {fileID: 8300000, guid: ec5e9c1f35bd7b644a24840b50201e0d, type: 3}
+  - name: boss_attack_telegraph
+    localVolume: 0.568
+    clip: {fileID: 8300000, guid: 295c047a50d848a47b6d95b7d409cb37, type: 3}
+  - name: clockwise_flamethrower_firing
+    localVolume: 0.384
+    clip: {fileID: 8300000, guid: 5f321a54bbb09d547b314c3436d7d24a, type: 3}
+  - name: clockwise_flamethrower_gettingready
+    localVolume: 0.36
+    clip: {fileID: 8300000, guid: 6c3fb2be987841d4b96ac215b3d92f06, type: 3}
+  - name: dash
+    localVolume: 0.356
+    clip: {fileID: 8300000, guid: ade8a22f26745d14397238a677f6ce3a, type: 3}
+  - name: laserbeam_firing
+    localVolume: 0.514
+    clip: {fileID: 8300000, guid: bda197322cb590947ad985fcb7e48fe0, type: 3}
+  - name: laserbeam_gettingready
+    localVolume: 0.534
+    clip: {fileID: 8300000, guid: 09a766615de22794f9abed9ba1e5ff1d, type: 3}
+  - name: laserbeam_ready
+    localVolume: 0.568
+    clip: {fileID: 8300000, guid: 52e6bebb48a39fe41bc361a8824a9668, type: 3}
+  - name: ledakanBoxAppear
+    localVolume: 0.521
+    clip: {fileID: 8300000, guid: 2075211e576e2f94ca9eea7d11ef1bc9, type: 3}
+  - name: player_move
+    localVolume: 0.534
+    clip: {fileID: 8300000, guid: b929da4d37b351147b6cbd689a24297f, type: 3}
+  - name: rotatinglaser_gettingready
+    localVolume: 0.527
+    clip: {fileID: 8300000, guid: 83a45f61e62ebc740bee0d943f8936cf, type: 3}
+  - name: round_flame
+    localVolume: 0.272
+    clip: {fileID: 8300000, guid: 03dbdda7e4e9db44c94d3ab58c9937f3, type: 3}
+  - name: tank_firing
+    localVolume: 0.507
+    clip: {fileID: 8300000, guid: 488c5090d2b49e44f9e9f8fbcf684db7, type: 3}
+  - name: tank_move
+    localVolume: 0.184
+    clip: {fileID: 8300000, guid: 17cdcc2d5e8dce543a87665ab9809487, type: 3}
+  - name: tank_projectiles
+    localVolume: 0.473
+    clip: {fileID: 8300000, guid: fa0b342f879a925469b7101112b3225c, type: 3}
+  - name: helicopter_strafing
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 9bd4d6aca6f36cf4598de1afeabfc954, type: 3}
+  - name: bike_engine
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 58902568ba054654a9342e0de024f038, type: 3}
+  - name: bike_started
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 239a122db558ed644afe50dea660fb78, type: 3}
+  - name: bike_starting
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: d914a7d80c01b744a8376910619a53f3, type: 3}
+  - name: dynamite_obtained
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: e473926e3bf4dad42a7f5826c6933568, type: 3}
+  - name: dynamite_throw
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 9f683085aed2bec418616d1ccb4d95fb, type: 3}
+  - name: poison_gas
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: b36e3aed002433c4fbe24d737ae58954, type: 3}
+  - name: train_engine
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 3869ef60e6fa71f49b41bbefbbca06be, type: 3}
+  - name: train_horn
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: b3d5815badda0b7468374e4b8196908b, type: 3}
+  - name: train_driveby
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: abf801d0f27caf94dbac13324d861aca, type: 3}
+  - name: bike_engine
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 58902568ba054654a9342e0de024f038, type: 3}
+  - name: teleport
+    localVolume: 0.3
+    clip: {fileID: 8300000, guid: c34ec986bce50194198caeff288fdbb5, type: 3}
+  - name: bigrocket_explosion
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 8c74b6f0ea00c364f9c8841e7577f053, type: 3}
+  - name: bigrocket_launch
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 0d8219a9592812441b94e1802f8d9a52, type: 3}
+  - name: energyball_impact
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 4e2b1cf614ffc3746b716bde887bcb61, type: 3}
+  - name: energyball_launch
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 7f0fb9721ec57ad438bbcbd73dac7174, type: 3}
+  - name: shield_popup
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 26374310bfd82b7448ef216ed39eb018, type: 3}
+  - name: shield_right
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 9a2bda02d0a324c47a6221821d303a37, type: 3}
+  - name: shield_wrong
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: cb5906a24d7a4884799734998f0b9335, type: 3}
+  - name: tidemaster_ambient
+    localVolume: 0.1
+    clip: {fileID: 8300000, guid: d0f0cf5dd7a0e2e4fb7fadf11b0f8f2d, type: 3}
+  - name: torpedo_impact
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 23f3c94afbfb86f4fb077f318f137272, type: 3}
+  - name: torpedo_launch
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 59fc9de873b933e4d8879a9075df4803, type: 3}
+  - name: cannon_impact
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: d505ec3253a38f74e9e606ea776f2f97, type: 3}
+  - name: cannon_launch
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: f01e12fa42e612b42a747332bc487e7b, type: 3}
+  - name: rating_appear
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 2e20f648dba30db4b8100bb9f02a4e80, type: 3}
+  - name: rating_big_panel_appear
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 3aa6cd6db912a12408de1bbdf36d1807, type: 3}
+  - name: rating_stamp_s
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 57c22b9055ba9d14389a6c639d8f1e86, type: 3}
+  - name: rating_stamp_a
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 37d11d3e157b1624783a122635c759f2, type: 3}
+  - name: rating_stamp_b
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 4a3161faecd2a5342890ed8ef711898c, type: 3}
+  - name: rating_stamp_c
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: e8b4d65b09f64134b94815d63a805a24, type: 3}
+  - name: rating_count_step
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: c500f20ac0525de4fb43bb6e2e5b49ab, type: 3}
+--- !u!114 &5958740494214816576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059652787528974241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae64adfb22626c34cafb93beb027e3ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioController: {fileID: 7595583283060605468}
+  audioLibrary: {fileID: 5058161449474547030}
+  audioSources: {fileID: 9134551001082559871}
+  audioParent: {fileID: 7764406693451072504}
+--- !u!114 &9134551001082559871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059652787528974241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40812e20d47c2724e98032ea0ad83366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7764406693451072504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8519120902725736527}
+  m_Layer: 0
+  m_Name: AudioSources
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8519120902725736527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7764406693451072504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7059652787528974245}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

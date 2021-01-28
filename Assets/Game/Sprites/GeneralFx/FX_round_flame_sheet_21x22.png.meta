@@ -1,0 +1,1244 @@
+fileFormatVersion: 2
+guid: 543adebf4dabe9140b07c78a509293d3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6156302025640174193
+    second: FX_round_flame_sheet_21x22_0
+  - first:
+      213: 3045987361317338759
+    second: FX_round_flame_sheet_21x22_1
+  - first:
+      213: 6013614882479048766
+    second: FX_round_flame_sheet_21x22_2
+  - first:
+      213: -6719099226231855822
+    second: FX_round_flame_sheet_21x22_3
+  - first:
+      213: 285207814303675104
+    second: FX_round_flame_sheet_21x22_4
+  - first:
+      213: -5324110282607425400
+    second: FX_round_flame_sheet_21x22_5
+  - first:
+      213: 5667639019479516883
+    second: FX_round_flame_sheet_21x22_6
+  - first:
+      213: -2111403317172274544
+    second: FX_round_flame_sheet_21x22_7
+  - first:
+      213: 7462199217775033555
+    second: FX_round_flame_sheet_21x22_8
+  - first:
+      213: 3566547493986923867
+    second: FX_round_flame_sheet_21x22_9
+  - first:
+      213: 4117021096015682741
+    second: FX_round_flame_sheet_21x22_10
+  - first:
+      213: 9114111736458670195
+    second: FX_round_flame_sheet_21x22_11
+  - first:
+      213: -7343920330852770146
+    second: FX_round_flame_sheet_21x22_12
+  - first:
+      213: 4808757942193745225
+    second: FX_round_flame_sheet_21x22_13
+  - first:
+      213: -5918769480796438019
+    second: FX_round_flame_sheet_21x22_14
+  - first:
+      213: -6290135004695710083
+    second: FX_round_flame_sheet_21x22_15
+  - first:
+      213: 9163387707472581092
+    second: FX_round_flame_sheet_21x22_16
+  - first:
+      213: -4689974509639711835
+    second: FX_round_flame_sheet_21x22_17
+  - first:
+      213: 5536448313871337088
+    second: FX_round_flame_sheet_21x22_18
+  - first:
+      213: 5002886273284614252
+    second: FX_round_flame_sheet_21x22_19
+  - first:
+      213: 8683213778501103632
+    second: FX_round_flame_sheet_21x22_20
+  - first:
+      213: 3858607768906095042
+    second: FX_round_flame_sheet_21x22_21
+  - first:
+      213: -8586367122545171093
+    second: FX_round_flame_sheet_21x22_22
+  - first:
+      213: -4003163349824598078
+    second: FX_round_flame_sheet_21x22_23
+  - first:
+      213: -8777500212543734131
+    second: FX_round_flame_sheet_21x22_24
+  - first:
+      213: -4635426550175234569
+    second: FX_round_flame_sheet_21x22_25
+  - first:
+      213: 206735523238632422
+    second: FX_round_flame_sheet_21x22_26
+  - first:
+      213: 5667940828647276100
+    second: FX_round_flame_sheet_21x22_27
+  - first:
+      213: -975276494760624396
+    second: FX_round_flame_sheet_21x22_28
+  - first:
+      213: 855421420197703461
+    second: FX_round_flame_sheet_21x22_29
+  - first:
+      213: 4714842021343098751
+    second: FX_round_flame_sheet_21x22_30
+  - first:
+      213: 479731333884408052
+    second: FX_round_flame_sheet_21x22_31
+  - first:
+      213: 9074899343523730732
+    second: FX_round_flame_sheet_21x22_32
+  - first:
+      213: 5074318191229763101
+    second: FX_round_flame_sheet_21x22_33
+  - first:
+      213: -8742102065203501193
+    second: FX_round_flame_sheet_21x22_34
+  - first:
+      213: -4032192200596046006
+    second: FX_round_flame_sheet_21x22_35
+  - first:
+      213: -1838774743493911280
+    second: FX_round_flame_sheet_21x22_36
+  - first:
+      213: 1444528988063674327
+    second: FX_round_flame_sheet_21x22_37
+  - first:
+      213: 4152680704973620488
+    second: FX_round_flame_sheet_21x22_38
+  - first:
+      213: -3178526094395787946
+    second: FX_round_flame_sheet_21x22_39
+  - first:
+      213: -1999352485569213210
+    second: FX_round_flame_sheet_21x22_40
+  - first:
+      213: -5145203310342035513
+    second: FX_round_flame_sheet_21x22_41
+  - first:
+      213: -2171247908213630490
+    second: FX_round_flame_sheet_21x22_42
+  - first:
+      213: -2224054463399419174
+    second: FX_round_flame_sheet_21x22_43
+  - first:
+      213: 1509088777966372318
+    second: FX_round_flame_sheet_21x22_44
+  - first:
+      213: 5512425040697279606
+    second: FX_round_flame_sheet_21x22_45
+  - first:
+      213: -838571267027297862
+    second: FX_round_flame_sheet_21x22_46
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 9
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d13b7dceb609aa0800000000000000
+      internalID: -6156302025640174193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e36a5ed55854a20800000000000000
+      internalID: 3045987361317338759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e388a26cfd6a47350800000000000000
+      internalID: 6013614882479048766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23529d16ad6f0c2a0800000000000000
+      internalID: -6719099226231855822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e27cbafef245f300800000000000000
+      internalID: 285207814303675104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8880e2408e5fc16b0800000000000000
+      internalID: -5324110282607425400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_6
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d64837e8af77ae40800000000000000
+      internalID: 5667639019479516883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a7d56aed9c2b2e0800000000000000
+      internalID: -2111403317172274544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_8
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcbda2f6ae0f8760800000000000000
+      internalID: 7462199217775033555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_9
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5576a5ac0cee7130800000000000000
+      internalID: 3566547493986923867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_10
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcddc8bfd8922930800000000000000
+      internalID: 4117021096015682741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_11
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37076dee554db7e70800000000000000
+      internalID: 9114111736458670195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_12
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e50cc6e57251a90800000000000000
+      internalID: -7343920330852770146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_13
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94deb4bded32cb240800000000000000
+      internalID: 4808757942193745225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_14
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df184b5248e4cdda0800000000000000
+      internalID: -5918769480796438019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_15
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76bcdf2a83f4b8a0800000000000000
+      internalID: -6290135004695710083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_16
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1951bf194ea2f70800000000000000
+      internalID: 9163387707472581092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_17
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3c943380dd9eeb0800000000000000
+      internalID: -4689974509639711835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_18
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0868c99786a65dc40800000000000000
+      internalID: 5536448313871337088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_19
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68aec22f82dd6540800000000000000
+      internalID: 5002886273284614252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_20
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 0
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010f5580de8f08870800000000000000
+      internalID: 8683213778501103632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_21
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9d53172578c8530800000000000000
+      internalID: 3858607768906095042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_22
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b652a95389817d880800000000000000
+      internalID: -8586367122545171093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_23
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf87db9428e178c0800000000000000
+      internalID: -4003163349824598078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_24
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e3a67df0e003680800000000000000
+      internalID: -8777500212543734131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_25
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f50466bc18abafb0800000000000000
+      internalID: -4635426550175234569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_26
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebd711fcd87ed200800000000000000
+      internalID: 206735523238632422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_27
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e3473572298ae40800000000000000
+      internalID: 5667940828647276100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_28
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe310cf13f1772f0800000000000000
+      internalID: -975276494760624396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_29
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fe42cdf311fdb00800000000000000
+      internalID: 855421420197703461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_30
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f777d3e86db7e6140800000000000000
+      internalID: 4714842021343098751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_31
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0fdcf3b1958a600800000000000000
+      internalID: 479731333884408052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_32
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25582f3fd480fd70800000000000000
+      internalID: 9074899343523730732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_33
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e7d8192899b6640800000000000000
+      internalID: 5074318191229763101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_34
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77726554d70dda680800000000000000
+      internalID: -8742102065203501193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_35
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 0
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f3f599e86ca08c0800000000000000
+      internalID: -4032192200596046006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_36
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01dd510fc1c5b76e0800000000000000
+      internalID: -1838774743493911280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_37
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df2a41167ffb0410800000000000000
+      internalID: 1444528988063674327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_38
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805429d691941a930800000000000000
+      internalID: 4152680704973620488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_39
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655ba329b5b93e3d0800000000000000
+      internalID: -3178526094395787946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_40
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec4ad4e18fd044e0800000000000000
+      internalID: -1999352485569213210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_41
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c726e589d09898b0800000000000000
+      internalID: -5145203310342035513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_42
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 0
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9dd9ff78d2ed1e0800000000000000
+      internalID: -2171247908213630490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_43
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 0
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2a4f3cf329221e0800000000000000
+      internalID: -2224054463399419174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_44
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5c6318f3c51f410800000000000000
+      internalID: 1509088777966372318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_45
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674cab15e51108c40800000000000000
+      internalID: 5512425040697279606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FX_round_flame_sheet_21x22_46
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 0
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab91df520ebcc54f0800000000000000
+      internalID: -838571267027297862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
