@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class CharaBehavior : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class CharaBehavior : MonoBehaviour
     [SerializeField] protected float speed;
     [SerializeField] protected float jumpSpeed;
     [SerializeField] protected float moonJump;
+    [SerializeField] protected float jumpDelay;
     [SerializeField] protected bool doubleJump;
     [SerializeField] protected bool canJump;
     [SerializeField] protected Vector2 direction;
@@ -28,6 +30,7 @@ public class CharaBehavior : MonoBehaviour
         speed = data.BaseSpeed;
         jumpSpeed = data.BaseJumpSpeed;
         moonJump = data.BaseMoonJump;
+        jumpDelay = data.JumpDelay;
     }
 
     void Start()
@@ -133,6 +136,7 @@ public class CharaBehavior : MonoBehaviour
         if (collision.gameObject.CompareTag("Wall"))
         {
             direction.x *= -1;
+            CameraShake.instance.Shake(2, 1, 2);
         }
     }
 
