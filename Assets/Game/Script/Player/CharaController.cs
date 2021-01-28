@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CharaController : CharaBehavior
 {
+    [Header ("Keycode")]
     [SerializeField] private KeyCode jump;
+    [HideInInspector] private bool jumpHold, jumpButton;
 
 
     void Start()
@@ -14,25 +16,39 @@ public class CharaController : CharaBehavior
 
     void Update()
     {
-        Move();
         CheckGround();
-        Action();
         ModifyPhysics();
+        jumpHold = Input.GetKey(jump);
+        jumpButton = Input.GetKeyDown(jump);
+    }
+
+    private void FixedUpdate()
+    {
+        Move();
+        Action();
     }
 
     public void Action()
     {
-        if (Input.GetKey(jump) && CheckGround() && canJump)
+        if (canJump)
         {
-            jumpParticle.gameObject.SetActive(true);
-            jumpParticle.Play();
-            Jump(doubleJump);
-        }
+            if (jumpButton && CheckGround())
+            {
+                jumpParticle.gameObject.SetActive(true);
+                jumpParticle.Play();
+                Jump(doubleJump);
+            }
 
-        if (Input.GetKey(jump) && doubleJump && canJump)
-        {
-            jumpParticle.Play();
-            Jump(doubleJump);
+            if (jumpButton && doubleJump && !isGliding)
+            {
+                jumpParticle.Play();
+                Jump(doubleJump);
+            }
+
+            if (jumpHold && canGliding && !isDoubleJump)
+            {
+                Glide();
+            }
         }
     }
 }

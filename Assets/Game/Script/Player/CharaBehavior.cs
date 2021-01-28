@@ -15,6 +15,9 @@ public class CharaBehavior : MonoBehaviour
     [SerializeField] protected float jumpDelay;
     [SerializeField] protected bool doubleJump;
     [SerializeField] protected bool canJump;
+    [SerializeField] protected bool canGliding;
+    [HideInInspector] protected bool isDoubleJump, isGliding;
+    [SerializeField] protected float fallSpeed;
     [SerializeField] protected Vector2 direction;
 
     [Header ("Raycast")] 
@@ -68,13 +71,11 @@ public class CharaBehavior : MonoBehaviour
     public void Jump(bool flag)
     {
         walkParticle.Stop();
-        if (!jumpParticle.isPlaying) jumpParticle.Play();
 
         if (!flag)
         {
             rb.velocity = new Vector2(rb.velocity.x * moonJump, 0);
             rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
-            jumpParticle.Play();
             anim.SetTrigger("Jump");
         }
         else
@@ -82,8 +83,16 @@ public class CharaBehavior : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
             canJump = false;
+            isDoubleJump = true;
             anim.SetTrigger("Jump");
         }
+    }
+
+    public void Glide()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, Mathf.Sign(rb.velocity.y) * fallSpeed);
+        isGliding = true;
+        Debug.Log("Glide");
     }
 
     public void ModifyPhysics()
@@ -110,6 +119,7 @@ public class CharaBehavior : MonoBehaviour
             {
                 rb.gravityScale = gravity * fallMultiplier;
                 doubleJump = true;
+                canGliding = true;
             }
             else if (rb.velocity.y > 0 && !Input.GetKeyDown(KeyCode.Space))
             {
@@ -140,8 +150,11 @@ public class CharaBehavior : MonoBehaviour
         {
             anim.SetTrigger("Landing");
             doubleJump = false;
+            isDoubleJump = false;
+            isGliding = false;
+            canGliding = false;
+            if (!canJump) DOVirtual.DelayedCall(jumpDelay, () => Debug.Log("Masuk Delay"));
             canJump = true;
-            jumpParticle.Stop();
             return true;
         }
         else
