@@ -22,9 +22,14 @@ public class CharaController : CharaBehavior
 
     public void Action()
     {
-        if (Input.GetKeyDown(jump) && CheckGround())
+        if (Input.GetKey(jump) && CheckGround() && canJump)
         {
-            Jump();
+            Jump(doubleJump);
+        }
+
+        if (Input.GetKey(jump) && doubleJump && canJump)
+        {
+            Jump(doubleJump);
         }
     }
 }

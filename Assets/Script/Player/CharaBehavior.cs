@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class CharaBehavior : MonoBehaviour
 {
+    [SerializeField] protected CharaData data;
     [SerializeField] protected float speed;
     [SerializeField] protected float jumpSpeed;
+    [SerializeField] protected float moonJump;
+    [SerializeField] protected bool doubleJump;
+    [SerializeField] protected bool canJump;
     [SerializeField] protected Vector2 direction;
     [SerializeField] protected LayerMask ground;
     [SerializeField] protected float groundLength;
@@ -14,11 +18,16 @@ public class CharaBehavior : MonoBehaviour
     [SerializeField] public float fallMultiplier = 5f;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
+    private Animator anim;
 
     public void Init()
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+        speed = data.BaseSpeed;
+        jumpSpeed = data.BaseJumpSpeed;
+        moonJump = data.BaseMoonJump;
     }
 
     void Start()
@@ -36,16 +45,26 @@ public class CharaBehavior : MonoBehaviour
         if (CheckGround())
         {
             rb.velocity = direction * speed;
+            anim.SetBool("Walk", true);
         }
-        Debug.Log(rb.velocity);
         ChangeFlip();
     }
 
-    public void Jump()
+    public void Jump(bool flag)
     {
-        rb.velocity = new Vector2(rb.velocity.x * speed, 0);
-        Debug.Log("Velocity : " + rb.velocity);
-        rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+        if (!flag)
+        {
+            rb.velocity = new Vector2(rb.velocity.x * moonJump, 0);
+            rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+            anim.SetTrigger("Jump");
+        }
+        else
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+            canJump = false;
+            anim.SetTrigger("Jump");
+        }
     }
 
     public void ModifyPhysics()
@@ -68,10 +87,10 @@ public class CharaBehavior : MonoBehaviour
         {
             rb.gravityScale = gravity;
             rb.drag = linearDrag * 0.15f;
-            Debug.Log("Velocity y : " + rb.velocity.y);
             if (rb.velocity.y < 0)
             {
                 rb.gravityScale = gravity * fallMultiplier;
+                doubleJump = true;
             }
             else if (rb.velocity.y > 0 && !Input.GetKeyDown(KeyCode.Space))
             {
@@ -98,12 +117,13 @@ public class CharaBehavior : MonoBehaviour
         Debug.DrawRay(transform.position, Vector2.down * groundLength, Color.red); // Untuk menngetahui seberapa panjang RaycastHit2D
         if (hit)
         {
-            Debug.Log(hit);
+            anim.SetTrigger("Landing");
+            doubleJump = false;
+            canJump = true;
             return true;
         }
         else
         {
-            Debug.Log(hit);
             return false;
         }
     }
