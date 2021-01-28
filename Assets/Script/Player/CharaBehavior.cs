@@ -8,6 +8,10 @@ public class CharaBehavior : MonoBehaviour
     [SerializeField] protected float jumpSpeed;
     [SerializeField] protected Vector2 direction;
     [SerializeField] protected LayerMask ground;
+    [SerializeField] protected float groundLength;
+    [SerializeField] public float linearDrag = 4f;
+    [SerializeField] public float gravity = 1f;
+    [SerializeField] public float fallMultiplier = 5f;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
 
@@ -29,14 +33,51 @@ public class CharaBehavior : MonoBehaviour
 
     public void Move()
     {
-        rb.velocity = direction * speed;
+        if (CheckGround())
+        {
+            rb.velocity = direction * speed;
+        }
+        Debug.Log(rb.velocity);
         ChangeFlip();
     }
 
     public void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, 0);
+        rb.velocity = new Vector2(rb.velocity.x * speed, 0);
+        Debug.Log("Velocity : " + rb.velocity);
         rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+    }
+
+    public void ModifyPhysics()
+    {
+        bool changingDirections = (direction.x > 0 && rb.velocity.x < 0) || (direction.x < 0 && rb.velocity.x > 0);
+
+        if (CheckGround())
+        {
+            if (Mathf.Abs(direction.x) < 0.4f || changingDirections)
+            {
+                rb.drag = linearDrag;
+            }
+            else
+            {
+                rb.drag = 0f;
+            }
+            rb.gravityScale = 0;
+        }
+        else
+        {
+            rb.gravityScale = gravity;
+            rb.drag = linearDrag * 0.15f;
+            Debug.Log("Velocity y : " + rb.velocity.y);
+            if (rb.velocity.y < 0)
+            {
+                rb.gravityScale = gravity * fallMultiplier;
+            }
+            else if (rb.velocity.y > 0 && !Input.GetKeyDown(KeyCode.Space))
+            {
+                rb.gravityScale = gravity * (fallMultiplier / 2);
+            }
+        }
     }
 
     public void ChangeFlip()
@@ -53,14 +94,16 @@ public class CharaBehavior : MonoBehaviour
 
     public bool CheckGround()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, ground);
-        Debug.DrawRay(transform.position, Vector2.down * 1f, Color.red); // Untuk menngetahui seberapa panjang RaycastHit2D
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, groundLength, ground);
+        Debug.DrawRay(transform.position, Vector2.down * groundLength, Color.red); // Untuk menngetahui seberapa panjang RaycastHit2D
         if (hit)
         {
+            Debug.Log(hit);
             return true;
         }
         else
         {
+            Debug.Log(hit);
             return false;
         }
     }

@@ -17,6 +17,7 @@ public class CharaController : CharaBehavior
         Move();
         CheckGround();
         Action();
+        ModifyPhysics();
     }
 
     public void Action()
