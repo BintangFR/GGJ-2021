@@ -32,6 +32,7 @@ public class CharaBehavior : MonoBehaviour
     [Header ("Particle System")]
     [SerializeField] protected ParticleSystem walkParticle;
     [SerializeField] protected ParticleSystem jumpParticle;
+    [SerializeField] protected ParticleSystem featherParticle;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator anim;
@@ -153,7 +154,6 @@ public class CharaBehavior : MonoBehaviour
             isDoubleJump = false;
             isGliding = false;
             canGliding = false;
-            if (!canJump) DOVirtual.DelayedCall(jumpDelay, () => Debug.Log("Masuk Delay"));
             canJump = true;
             return true;
         }
@@ -168,6 +168,7 @@ public class CharaBehavior : MonoBehaviour
         if (collision.gameObject.CompareTag("Wall"))
         {
             direction.x *= -1;
+            featherParticle.Play();
             CameraShake.instance.Shake(2, 1, 2);
         }
 

@@ -71,12 +71,16 @@ public class InGameUI : MonoBehaviour
     {
         pausePanel.SetActive(false);
         GameVariables.GAME_PAUSE = false;
+        GameVariables.GAME_OVER = false;
+        GameVariables.GAME_WIN = false;
         Time.timeScale = 1;
     }
 
     public void Retry()
     {
         GameVariables.GAME_PAUSE = false;
+        GameVariables.GAME_OVER = false;
+        GameVariables.GAME_WIN = false;
         TransitionManager.Instance.FadeIn(MoveToGame);
     }
 
