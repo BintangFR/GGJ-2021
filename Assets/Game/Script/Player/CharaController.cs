@@ -41,7 +41,7 @@ public class CharaController : CharaBehavior
 
             if (jumpButton && doubleJump && !isGliding)
             {
-                jumpParticle.Play();
+                featherParticle.Play();
                 Jump(doubleJump);
             }
 
