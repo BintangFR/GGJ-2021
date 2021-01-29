@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using TomWill;
 
 public class CharaBehavior : MonoBehaviour
 {
@@ -65,6 +66,7 @@ public class CharaBehavior : MonoBehaviour
             rb.velocity = direction * speed;
             if (!walkParticle.isPlaying) walkParticle.Play();
             anim.SetBool("Walk", true);
+            TWAudioController.PlaySFX("PLAYER_SFX", "player_walk");
         }
         ChangeFlip();
     }
@@ -183,6 +185,7 @@ public class CharaBehavior : MonoBehaviour
         {
             this.gameObject.SetActive(false);
             GameVariables.GAME_OVER = true;
+            TWAudioController.PlaySFX("PLAYER_SFX", "player_saw_death");
             InGameUI.instance.ShowLoseMenu();
         }
     }

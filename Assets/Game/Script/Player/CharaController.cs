@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TomWill;
 public class CharaController : CharaBehavior
 {
     [Header ("Keycode")]
@@ -36,12 +36,14 @@ public class CharaController : CharaBehavior
             {
                 jumpParticle.gameObject.SetActive(true);
                 jumpParticle.Play();
+                TWAudioController.PlaySFX("PLAYER_SFX", "player_jump");
                 Jump(doubleJump);
             }
 
             if (jumpButton && doubleJump && !isGliding)
             {
                 featherParticle.Play();
+                TWAudioController.PlaySFX("PLAYER_SFX", "player_doublejump");
                 Jump(doubleJump);
             }
 
