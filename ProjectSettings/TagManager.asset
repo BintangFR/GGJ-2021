@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - Collectible
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -47,4 +49,10 @@ TagManager:
     locked: 0
   - name: Environment
     uniqueID: 1842413247
+    locked: 0
+  - name: UI
+    uniqueID: 4040384191
+    locked: 0
+  - name: Overlay
+    uniqueID: 2927999417
     locked: 0

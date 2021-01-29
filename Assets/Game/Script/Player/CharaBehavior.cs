@@ -170,6 +170,20 @@ public class CharaBehavior : MonoBehaviour
             direction.x *= -1;
             CameraShake.instance.Shake(2, 1, 2);
         }
+
+        if (collision.gameObject.CompareTag("Collectible"))
+        {
+            GameData.instance.ChickCollect++;
+            Debug.Log(GameData.instance.ChickCollect);
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            this.gameObject.SetActive(false);
+            GameVariables.GAME_OVER = true;
+            InGameUI.instance.ShowLoseMenu();
+        }
     }
 
 }

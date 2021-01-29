@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class GameData : MonoBehaviour
 {
-    
-    void Start()
+    public static GameData instance;
+
+    private int chickCollect;
+
+    public int ChickCollect { get => chickCollect; set => chickCollect = value; }
+
+    void Awake()
     {
-        
+        instance = this;
     }
 
     void Update()
