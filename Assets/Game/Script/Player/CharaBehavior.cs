@@ -70,9 +70,13 @@ public class CharaBehavior : MonoBehaviour
             rb.velocity = direction * speed;
             if (!walkParticle.isPlaying) walkParticle.Play();
             anim.SetBool("Walk", true);
-            TWAudioController.PlaySFX("PLAYER_SFX", "player_walk");
         }
         ChangeFlip();
+    }
+
+    public void PlaySFXMove()
+    {
+        TWAudioController.PlaySFX("PLAYER_SFX", "player_walk");
     }
 
     public void Jump(bool flag)
