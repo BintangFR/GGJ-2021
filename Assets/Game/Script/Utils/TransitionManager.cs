@@ -16,6 +16,8 @@ public class TransitionManager : MonoBehaviour
     public static TransitionManager Instance;
     private UnityEvent onComplete;
 
+    public float TimeToFade { get => timeToFade; set => timeToFade = value; }
+
     private void Awake()
     {
         timeElapsed = 0;

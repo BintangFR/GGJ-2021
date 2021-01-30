@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DG.Tweening;
 public class InGameUI : MonoBehaviour
 {
     public static InGameUI instance;
@@ -14,7 +15,8 @@ public class InGameUI : MonoBehaviour
     {
         instance = this;
         TransitionManager.Instance.FadeOut(null);
-        Time.timeScale = 1;
+        GameVariables.GAME_RETRY = false;
+        DOVirtual.DelayedCall(TransitionManager.Instance.TimeToFade, () => Time.timeScale = 1f);
         GameVariables.GAME_PAUSE = false;
     }
 
@@ -65,8 +67,12 @@ public class InGameUI : MonoBehaviour
 
     public void ShowWinMenu()
     {
-        retryText.gameObject.SetActive(false);
-        winPanel.SetActive(true);
+        if (!GameVariables.GAME_RETRY)
+        {
+            retryText.gameObject.SetActive(false);
+            Time.timeScale = 0f;
+            winPanel.SetActive(true);
+        }
     }
 
     public void Pause()
@@ -88,6 +94,8 @@ public class InGameUI : MonoBehaviour
 
     public void Retry()
     {
+        Time.timeScale = 0f;
+        GameVariables.GAME_RETRY = true;
         GameVariables.GAME_PAUSE = false;
         GameVariables.GAME_OVER = false;
         GameVariables.GAME_WIN = false;

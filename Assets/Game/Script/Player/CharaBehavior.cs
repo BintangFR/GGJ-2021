@@ -220,6 +220,7 @@ public class CharaBehavior : MonoBehaviour
         {
             TWAudioController.PlaySFX("PLAYER_SFX", "player_fall_down");
             featherParticle.Play();
+            deathParticle.Play();
             DOVirtual.DelayedCall(bloodParticle.main.duration, () =>
             {
                 this.gameObject.SetActive(false);
