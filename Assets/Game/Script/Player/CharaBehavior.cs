@@ -182,8 +182,8 @@ public class CharaBehavior : MonoBehaviour
         if ((hit && direction.x > 0) || (hit2 && direction.x < 0))
         {
             direction.x *= -1;
+            TWAudioController.PlaySFX("PLAYER_SFX", "player_impact");
             featherParticle.Play();
-            //CameraShake.instance.Shake(1, 5, 3);
             return true;
         }
         else
@@ -196,24 +196,20 @@ public class CharaBehavior : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Collectible"))
         {
-            GameData.instance.ChickCollect++;
-            Debug.Log(GameData.instance.ChickCollect);
-            //DOVirtual.DelayedCall(0.8f, () => GameVariables.GAME_WIN = true);
             Destroy(collision.gameObject);
+            DOVirtual.DelayedCall(1.5f, () => 
+            {
+                GameVariables.GAME_WIN = true;
+                InGameUI.instance.ShowWinMenu();
+            });
         }
 
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             TWAudioController.PlaySFX("PLAYER_SFX", "player_saw_death");
-            DOTween.Sequence()
-                .AppendCallback(() => bloodParticle.Play())
-                .AppendCallback(() => deathParticle.Play())
-                .AppendInterval(bloodParticle.main.duration)
-                .AppendCallback(() =>
-                {
-                    this.gameObject.SetActive(false);
-                   
-                });
+            bloodParticle.Play();
+            deathParticle.Play();
+            DOVirtual.DelayedCall(bloodParticle.main.duration, () => this.gameObject.SetActive(false));
             DOVirtual.DelayedCall(2.0f, () => {
                 GameVariables.GAME_OVER = true;
                 InGameUI.instance.ShowLoseMenu();
@@ -222,6 +218,7 @@ public class CharaBehavior : MonoBehaviour
 
         if (collision.gameObject.CompareTag("End"))
         {
+            TWAudioController.PlaySFX("PLAYER_SFX", "player_fall_down");
             featherParticle.Play();
             DOVirtual.DelayedCall(bloodParticle.main.duration, () =>
             {

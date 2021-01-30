@@ -6,7 +6,7 @@ public class CharaController : CharaBehavior
 {
     [Header ("Keycode")]
     [SerializeField] private KeyCode jump;
-    [HideInInspector] private bool jumpHold, jumpButton;
+    [SerializeField] private bool jumpHold, jumpButton;
 
 
     void Start()
@@ -18,10 +18,8 @@ public class CharaController : CharaBehavior
     {
         CheckGround();
         CheckWall();
+        InputKey();
         ModifyPhysics();
-        jumpHold = Input.GetKey(jump);
-        jumpButton = Input.GetKeyDown(jump);
- 
     }
 
     private void FixedUpdate()
@@ -30,12 +28,22 @@ public class CharaController : CharaBehavior
         Action();
     }
 
+    public void InputKey()
+    {
+        //jumpHold = Input.GetKey(jump);
+        //jumpButton = Input.GetKeyDown(jump);
+
+        if (Input.GetKey(jump)) jumpHold = true;
+        if (Input.GetKeyDown(jump)) jumpButton = true;
+    }
+
     public void Action()
     {
         if (canJump)
         {
             if (jumpButton && CheckGround())
             {
+                jumpButton = false;
                 jumpParticle.gameObject.SetActive(true);
                 jumpParticle.Play();
                 TWAudioController.PlaySFX("PLAYER_SFX", "player_jump");
@@ -44,6 +52,7 @@ public class CharaController : CharaBehavior
 
             if (jumpButton && doubleJump && !isGliding)
             {
+                jumpButton = false;
                 featherParticle.Play();
                 TWAudioController.PlaySFX("PLAYER_SFX", "player_doublejump");
                 Jump(doubleJump);
@@ -51,6 +60,7 @@ public class CharaController : CharaBehavior
 
             if (jumpHold && canGliding && !isDoubleJump)
             {
+                jumpHold = false;
                 Glide();
             }
         }

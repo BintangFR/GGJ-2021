@@ -47,6 +47,11 @@ public class InGameUI : MonoBehaviour
                 Resume();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Retry();
+        }
     }
 
     public void ShowLoseMenu()
