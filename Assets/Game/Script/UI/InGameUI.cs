@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class InGameUI : MonoBehaviour
 {
     public static InGameUI instance;
     [SerializeField] private GameObject pausePanel, winPanel, losePanel;
+    [SerializeField] private Text retryText; 
     [SerializeField] private string sceneName;
 
     void Start()
@@ -48,7 +50,7 @@ public class InGameUI : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && !GameVariables.GAME_OVER && !GameVariables.GAME_WIN && !GameVariables.GAME_PAUSE)
         {
             Retry();
         }
@@ -56,17 +58,20 @@ public class InGameUI : MonoBehaviour
 
     public void ShowLoseMenu()
     {
+        retryText.gameObject.SetActive(false);
         losePanel.SetActive(true);
         GameData.instance.ChickCollect = 0;
     }
 
     public void ShowWinMenu()
     {
+        retryText.gameObject.SetActive(false);
         winPanel.SetActive(true);
     }
 
     public void Pause()
     {
+        retryText.gameObject.SetActive(false);
         pausePanel.SetActive(true);
         GameVariables.GAME_PAUSE = true;
         Time.timeScale = 0;
