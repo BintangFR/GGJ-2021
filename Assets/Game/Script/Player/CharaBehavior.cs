@@ -23,7 +23,9 @@ public class CharaBehavior : MonoBehaviour
 
     [Header ("Raycast")] 
     [SerializeField] protected LayerMask ground;
+    [SerializeField] protected LayerMask wall;
     [SerializeField] protected float groundLength;
+    [SerializeField] protected float wallLength;
 
     [Header ("Physics2D")]
     [SerializeField] public float linearDrag = 4f;
@@ -33,7 +35,9 @@ public class CharaBehavior : MonoBehaviour
     [Header ("Particle System")]
     [SerializeField] protected ParticleSystem walkParticle;
     [SerializeField] protected ParticleSystem jumpParticle;
+    [SerializeField] protected ParticleSystem deathParticle;
     [SerializeField] protected ParticleSystem featherParticle;
+    [SerializeField] protected ParticleSystem bloodParticle;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator anim;
@@ -165,29 +169,59 @@ public class CharaBehavior : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public bool CheckWall()
     {
-        if (collision.gameObject.CompareTag("Wall"))
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, wallLength, wall);
+        RaycastHit2D hit2 = Physics2D.Raycast(transform.position, Vector2.left, wallLength, wall);
+        Debug.DrawRay(transform.position, Vector2.right * wallLength, Color.green);
+        if ((hit && direction.x > 0) || (hit2 && direction.x < 0))
         {
             direction.x *= -1;
             featherParticle.Play();
-            CameraShake.instance.Shake(2, 1, 2);
+            CameraShake.instance.Shake(1, 5, 3);
+            return true;
         }
+        else
+        {
+            return false;
+        }
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.gameObject.CompareTag("Collectible"))
         {
             GameData.instance.ChickCollect++;
             Debug.Log(GameData.instance.ChickCollect);
+            //DOVirtual.DelayedCall(0.8f, () => GameVariables.GAME_WIN = true);
             Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            this.gameObject.SetActive(false);
-            GameVariables.GAME_OVER = true;
             TWAudioController.PlaySFX("PLAYER_SFX", "player_saw_death");
+            DOTween.Sequence()
+                .AppendCallback(() => bloodParticle.Play())
+                .AppendCallback(() => deathParticle.Play())
+                .AppendInterval(deathParticle.main.duration/2)
+                .AppendCallback(() => CameraShake.instance.Shake(bloodParticle.main.duration, 5, 3))
+                .AppendInterval(deathParticle.main.duration/2)
+                .AppendCallback(() =>
+                {
+                    this.gameObject.SetActive(false);
+                    InGameUI.instance.ShowLoseMenu();
+                });
+            DOVirtual.DelayedCall(0.8f, () => GameVariables.GAME_OVER = true);
+        }
+
+        if (collision.gameObject.CompareTag("End"))
+        {
+            bloodParticle.Play();
+            DOVirtual.DelayedCall(0.8f, () => GameVariables.GAME_OVER = true);
+            this.gameObject.SetActive(false);
             InGameUI.instance.ShowLoseMenu();
         }
+
     }
 
 }

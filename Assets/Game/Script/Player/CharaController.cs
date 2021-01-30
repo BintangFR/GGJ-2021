@@ -17,6 +17,7 @@ public class CharaController : CharaBehavior
     void Update()
     {
         CheckGround();
+        CheckWall();
         ModifyPhysics();
         jumpHold = Input.GetKey(jump);
         jumpButton = Input.GetKeyDown(jump);

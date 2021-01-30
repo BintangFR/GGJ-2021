@@ -6,6 +6,7 @@ public class InGameUI : MonoBehaviour
 {
     public static InGameUI instance;
     [SerializeField] private GameObject pausePanel, winPanel, losePanel;
+    [SerializeField] private string sceneName;
 
     void Start()
     {
@@ -52,7 +53,7 @@ public class InGameUI : MonoBehaviour
     {
         losePanel.SetActive(true);
         GameData.instance.ChickCollect = 0;
-        Time.timeScale = 1f;
+        Time.timeScale = 0f;
     }
 
     public void ShowWinMenu()
@@ -106,6 +107,6 @@ public class InGameUI : MonoBehaviour
 
     public void ContinueGame()
     {
-        SceneManager.LoadScene("LevelSelect");
+        SceneManager.LoadScene(sceneName);
     }
 }
