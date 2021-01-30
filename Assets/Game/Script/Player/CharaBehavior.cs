@@ -210,7 +210,7 @@ public class CharaBehavior : MonoBehaviour
             bloodParticle.Play();
             deathParticle.Play();
             DOVirtual.DelayedCall(bloodParticle.main.duration, () => this.gameObject.SetActive(false));
-            DOVirtual.DelayedCall(2.0f, () => {
+            DOVirtual.DelayedCall(0.0f, () => {
                 GameVariables.GAME_OVER = true;
                 InGameUI.instance.ShowLoseMenu();
             });
@@ -225,7 +225,7 @@ public class CharaBehavior : MonoBehaviour
             {
                 this.gameObject.SetActive(false);
             });
-            DOVirtual.DelayedCall(2.0f, () => {
+            DOVirtual.DelayedCall(0.0f, () => {
                 GameVariables.GAME_OVER = true;
                 InGameUI.instance.ShowLoseMenu();
             });
