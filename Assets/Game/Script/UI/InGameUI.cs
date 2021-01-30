@@ -53,7 +53,6 @@ public class InGameUI : MonoBehaviour
     {
         losePanel.SetActive(true);
         GameData.instance.ChickCollect = 0;
-        Time.timeScale = 0f;
     }
 
     public void ShowWinMenu()

@@ -104,6 +104,7 @@ public class CharaBehavior : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, Mathf.Sign(rb.velocity.y) * fallSpeed);
         isGliding = true;
         Debug.Log("Glide");
+        anim.SetTrigger("Jump");
     }
 
     public void ModifyPhysics()
@@ -182,7 +183,7 @@ public class CharaBehavior : MonoBehaviour
         {
             direction.x *= -1;
             featherParticle.Play();
-            CameraShake.instance.Shake(1, 5, 3);
+            //CameraShake.instance.Shake(1, 5, 3);
             return true;
         }
         else
@@ -207,26 +208,29 @@ public class CharaBehavior : MonoBehaviour
             DOTween.Sequence()
                 .AppendCallback(() => bloodParticle.Play())
                 .AppendCallback(() => deathParticle.Play())
-                .AppendInterval(deathParticle.main.duration/2)
-                .AppendCallback(() => CameraShake.instance.Shake(bloodParticle.main.duration, 5, 3))
-                .AppendInterval(deathParticle.main.duration/2)
+                .AppendInterval(bloodParticle.main.duration)
                 .AppendCallback(() =>
                 {
                     this.gameObject.SetActive(false);
-                    InGameUI.instance.ShowLoseMenu();
+                   
                 });
-            DOVirtual.DelayedCall(0.8f, () => GameVariables.GAME_OVER = true);
+            DOVirtual.DelayedCall(2.0f, () => {
+                GameVariables.GAME_OVER = true;
+                InGameUI.instance.ShowLoseMenu();
+            });
         }
 
         if (collision.gameObject.CompareTag("End"))
         {
-            bloodParticle.Play();
+            featherParticle.Play();
             DOVirtual.DelayedCall(bloodParticle.main.duration, () =>
             {
                 this.gameObject.SetActive(false);
+            });
+            DOVirtual.DelayedCall(2.0f, () => {
+                GameVariables.GAME_OVER = true;
                 InGameUI.instance.ShowLoseMenu();
             });
-            DOVirtual.DelayedCall(0.8f, () => GameVariables.GAME_OVER = true);
         }
 
     }

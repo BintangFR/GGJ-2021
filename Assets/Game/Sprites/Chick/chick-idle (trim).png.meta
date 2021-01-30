@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: -3397156926424734289
     second: chick-idle (trim)_1
+  - first:
+      213: 15003021571287741
+    second: chick-idle (trim)_0
+  - first:
+      213: 487095299255199662
+    second: chick-idle (trim)_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -110,8 +116,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 8
-        height: 8
+        width: 10
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73f4fee737e7050c0800000000000000
-      internalID: -4589028985774584009
+      spriteID: dba605b2b2d453000800000000000000
+      internalID: 15003021571287741
       vertices: []
       indices: 
       edges: []
@@ -129,10 +135,10 @@ TextureImporter:
       name: chick-idle (trim)_1
       rect:
         serializedVersion: 2
-        x: 8
+        x: 10
         y: 0
-        width: 8
-        height: 8
+        width: 10
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +146,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa5223a36cfdad0d0800000000000000
-      internalID: -3397156926424734289
+      spriteID: ea76edb089282c600800000000000000
+      internalID: 487095299255199662
       vertices: []
       indices: 
       edges: []

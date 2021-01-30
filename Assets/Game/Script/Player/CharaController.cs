@@ -21,6 +21,7 @@ public class CharaController : CharaBehavior
         ModifyPhysics();
         jumpHold = Input.GetKey(jump);
         jumpButton = Input.GetKeyDown(jump);
+ 
     }
 
     private void FixedUpdate()
