@@ -217,9 +217,12 @@ public class CharaBehavior : MonoBehaviour
         if (collision.gameObject.CompareTag("End"))
         {
             bloodParticle.Play();
+            DOVirtual.DelayedCall(bloodParticle.main.duration, () =>
+            {
+                this.gameObject.SetActive(false);
+                InGameUI.instance.ShowLoseMenu();
+            });
             DOVirtual.DelayedCall(0.8f, () => GameVariables.GAME_OVER = true);
-            this.gameObject.SetActive(false);
-            InGameUI.instance.ShowLoseMenu();
         }
 
     }
