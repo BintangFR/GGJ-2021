@@ -15,6 +15,7 @@ public class CreditUI : MonoBehaviour
     private void Start()
     {
         TransitionManager.Instance.FadeOut(null);
+        Time.timeScale = 1f;
         DOVirtual.DelayedCall(TransitionManager.Instance.TimeToFade, () => timeline.Play());
     }
 
