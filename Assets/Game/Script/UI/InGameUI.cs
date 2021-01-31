@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TomWill;
 using DG.Tweening;
 public class InGameUI : MonoBehaviour
 {
     public static InGameUI instance;
     [SerializeField] private GameObject pausePanel, winPanel, losePanel;
+    [SerializeField] private bool firstTimePlay;
     [SerializeField] private Text retryText; 
     [SerializeField] private string sceneName;
 
@@ -15,9 +17,14 @@ public class InGameUI : MonoBehaviour
     {
         instance = this;
         TransitionManager.Instance.FadeOut(null);
+        if (firstTimePlay) TWAudioController.PlayBGM("MAIN_BGM", "BGM");
+        firstTimePlay = false;
         GameVariables.GAME_RETRY = false;
+        GameVariables.GAME_WIN = false;
+        GameVariables.GAME_OVER = false;
         DOVirtual.DelayedCall(TransitionManager.Instance.TimeToFade, () => Time.timeScale = 1f);
         GameVariables.GAME_PAUSE = false;
+
     }
 
     void Update()
@@ -70,7 +77,6 @@ public class InGameUI : MonoBehaviour
         if (!GameVariables.GAME_RETRY)
         {
             retryText.gameObject.SetActive(false);
-            Time.timeScale = 0f;
             winPanel.SetActive(true);
         }
     }

@@ -59,7 +59,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f2b7a9fda5ff34da3e2b3a2b004bb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgmClips: []
+  bgmClips:
+  - name: BGM
+    localVolume: 0.5
+    clip: {fileID: 8300000, guid: 521962e7a94ecaa4db4e2c73df176d21, type: 3}
   sfxClips:
   - name: player_jump
     localVolume: 0.541

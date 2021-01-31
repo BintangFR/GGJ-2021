@@ -182,6 +182,7 @@ public class CharaBehavior : MonoBehaviour
         if ((hit && direction.x > 0) || (hit2 && direction.x < 0))
         {
             direction.x *= -1;
+            rb.velocity = direction * speed;
             TWAudioController.PlaySFX("PLAYER_SFX", "player_impact");
             featherParticle.Play();
             return true;
@@ -196,8 +197,9 @@ public class CharaBehavior : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Collectible"))
         {
+            Time.timeScale = 0f;
             Destroy(collision.gameObject);
-            DOVirtual.DelayedCall(1.5f, () => 
+            DOVirtual.DelayedCall(0.5f, () => 
             {
                 GameVariables.GAME_WIN = true;
                 InGameUI.instance.ShowWinMenu();
@@ -209,8 +211,9 @@ public class CharaBehavior : MonoBehaviour
             TWAudioController.PlaySFX("PLAYER_SFX", "player_saw_death");
             bloodParticle.Play();
             deathParticle.Play();
+            sprite.enabled = false;
             DOVirtual.DelayedCall(bloodParticle.main.duration, () => this.gameObject.SetActive(false));
-            DOVirtual.DelayedCall(0.0f, () => {
+            DOVirtual.DelayedCall(2.0f, () => {
                 GameVariables.GAME_OVER = true;
                 InGameUI.instance.ShowLoseMenu();
             });
@@ -221,11 +224,12 @@ public class CharaBehavior : MonoBehaviour
             TWAudioController.PlaySFX("PLAYER_SFX", "player_fall_down");
             featherParticle.Play();
             deathParticle.Play();
+            sprite.enabled = false;
             DOVirtual.DelayedCall(bloodParticle.main.duration, () =>
             {
                 this.gameObject.SetActive(false);
             });
-            DOVirtual.DelayedCall(0.0f, () => {
+            DOVirtual.DelayedCall(2.0f, () => {
                 GameVariables.GAME_OVER = true;
                 InGameUI.instance.ShowLoseMenu();
             });
