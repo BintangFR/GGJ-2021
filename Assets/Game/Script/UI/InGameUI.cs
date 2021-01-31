@@ -120,7 +120,7 @@ public class InGameUI : MonoBehaviour
 
     public void MoveToMenu()
     {
-        SceneManager.LoadScene("LevelSelect");
+        Application.Quit();
     }
 
     public void ContinueLevel()
