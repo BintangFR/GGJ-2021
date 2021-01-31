@@ -723,7 +723,7 @@ PrefabInstance:
     - target: {fileID: 5058161449474547030, guid: cdb0c18a9d91f2e4ba966c2cabdf7b81,
         type: 3}
       propertyPath: sfxClips.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5058161449474547030, guid: cdb0c18a9d91f2e4ba966c2cabdf7b81,
         type: 3}
@@ -810,6 +810,16 @@ PrefabInstance:
       propertyPath: sfxClips.Array.data[0].clip
       value: 
       objectReference: {fileID: 8300000, guid: beae1ae05a7e25f48b42598701ac187e, type: 3}
+    - target: {fileID: 5058161449474547030, guid: cdb0c18a9d91f2e4ba966c2cabdf7b81,
+        type: 3}
+      propertyPath: sfxClips.Array.data[6].name
+      value: player_win
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058161449474547030, guid: cdb0c18a9d91f2e4ba966c2cabdf7b81,
+        type: 3}
+      propertyPath: sfxClips.Array.data[6].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c005c64aaccd4e747b496d663d5d0dd8, type: 3}
     - target: {fileID: 7059652787528974241, guid: cdb0c18a9d91f2e4ba966c2cabdf7b81,
         type: 3}
       propertyPath: m_Name
@@ -3849,7 +3859,7 @@ MonoBehaviour:
   losePanel: {fileID: 1637713851}
   firstTimePlay: 0
   retryText: {fileID: 1634388015}
-  sceneName: Level 4
+  sceneName: Level 5
 --- !u!1 &1160622087
 GameObject:
   m_ObjectHideFlags: 0

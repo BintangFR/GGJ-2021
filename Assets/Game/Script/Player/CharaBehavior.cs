@@ -197,6 +197,7 @@ public class CharaBehavior : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Collectible"))
         {
+            TWAudioController.PlaySFX("PLAYER_SFX", "player_win");
             Time.timeScale = 0f;
             Destroy(collision.gameObject);
             DOVirtual.DelayedCall(0.5f, () => 
